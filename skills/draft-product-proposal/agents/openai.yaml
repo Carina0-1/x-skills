@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品方案初稿"
+  short_description: "将产品想法整理成明确用户问题、首版范围、关键规则与验证计划的初稿"
+  default_prompt: "请使用 $draft-product-proposal，根据当前讨论生成产品方案初稿，区分事实与假设，并保存为 Markdown 文件。"

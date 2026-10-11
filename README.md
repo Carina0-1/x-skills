@@ -49,7 +49,7 @@ Git 推送用于同步源文件，不会自动安装到 ChatGPT 账号、网页�
 
 ```bash
 git init -b main
-git add README.md AGENTS.md .gitignore skills/.gitkeep
+git add README.md AGENTS.md .gitignore skills/
 git commit -m "Initialize personal skills repository"
 ```
 
@@ -62,12 +62,12 @@ git commit -m "Improve <skill-name> workflow"
 git push
 ```
 
-目标远程仓库：`git@github.com:Carina0-1/x-skills.git`。
+目标远程仓库：`ssh://git@ssh.github.com:443/Carina0-1/x-skills.git`（使用 SSH 443 端口）。
 
 初次连接远程，在本地仓库初始化后执行：
 
 ```bash
-git remote add origin git@github.com:Carina0-1/x-skills.git
+git remote add origin ssh://git@ssh.github.com:443/Carina0-1/x-skills.git
 git push -u origin main
 ```
 
@@ -77,4 +77,17 @@ git push -u origin main
 
 ## Skill 清单
 
-待迁入第一个 skill。后续记录名称、用途、来源、版本及依赖。
+| 名称 | 用途 | 来源 / 版本 | 依赖 |
+| --- | --- | --- | --- |
+| [prd-generator](skills/prd-generator/SKILL.md) | 结合草稿和原型代码生成 Markdown PRD | 自建；从教育平台项目迁入，Git 提交记录版本 | 草稿、目标项目原型代码；格式规范已随 skill 打包 |
+| [draft-product-proposal](skills/draft-product-proposal/SKILL.md) | 将产品想法、讨论记录整理为可评审的产品方案初稿 | 自建；从本机已安装 skill 迁入，Git 提交记录版本 | 产品想法或已有材料；写作框架已随 skill 打包 |
+
+### 使用 prd-generator
+
+见 [prd-generator 使用说明](docs/prd-generator-usage.md)：首次安装、调用方式、可复制的请求示例及更新方法。
+需要使用时再安装；原项目中的 skill 保留。
+
+### 使用 draft-product-proposal
+
+见 [draft-product-proposal 使用说明](docs/draft-product-proposal-usage.md)：调用示例、与 PRD 技能的区别及后续统一维护方法。
+本机已有安装，本次保留原目录；仓库副本尚未与原安装目录建立链接。

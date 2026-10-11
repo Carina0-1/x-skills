@@ -1,0 +1,3 @@
+interface:
+  display_name: "PRD 生成器"
+  short_description: "结合草稿、原型代码与已有文档，生成格式统一的 Markdown PRD"
