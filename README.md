@@ -81,6 +81,7 @@ git push -u origin main
 | --- | --- | --- | --- |
 | [prd-generator](skills/prd-generator/SKILL.md) | 结合草稿和原型代码生成 Markdown PRD | 自建；从教育平台项目迁入，Git 提交记录版本 | 草稿、目标项目原型代码；格式规范已随 skill 打包 |
 | [draft-product-proposal](skills/draft-product-proposal/SKILL.md) | 将产品想法、讨论记录整理为可评审的产品方案初稿 | 自建；从本机已安装 skill 迁入，Git 提交记录版本 | 产品想法或已有材料；写作框架已随 skill 打包 |
+| [static-prototype-dev](skills/static-prototype-dev/SKILL.md) | 新建或迭代多页面静态交互原型，组织角色页面、模拟数据与跨页状态 | 自建；从本机已安装 skill 原样迁入，Git 提交记录版本 | 无随包外部依赖；生成原型默认使用 HTML、原生 JavaScript、CSS |
 
 ### 使用 prd-generator
 
@@ -91,3 +92,8 @@ git push -u origin main
 
 见 [draft-product-proposal 使用说明](docs/draft-product-proposal-usage.md)：调用示例、与 PRD 技能的区别及后续统一维护方法。
 本机已有安装，本次保留原目录；仓库副本尚未与原安装目录建立链接。
+
+### 使用 static-prototype-dev
+
+见 [static-prototype-dev 使用说明](docs/static-prototype-dev-usage.md)：新建与迭代示例、安装状态及更新方法。
+本机已有安装，本次完整复制并保留原目录；仓库副本与已安装副本独立维护。

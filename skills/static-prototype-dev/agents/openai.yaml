@@ -1,0 +1,4 @@
+interface:
+  display_name: "静态交互原型开发"
+  short_description: "新建与迭代多角色静态前端原型，统一模块结构、模拟数据与协作约定"
+  default_prompt: "使用 $static-prototype-dev 新建或迭代静态前端交互原型，沿用分层目录并验证关键流程。"
